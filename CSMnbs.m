@@ -145,7 +145,7 @@ INspectrum = etha * ADRSspectrum;
 if ~isempty(NdispCSM) % CSM
     
     % guess displacement demand
-    PPxOLD = ( DeltaStep : DeltaStep : CSMdisp )';
+    PPxOLD = ( 0 : DeltaStep : CSMdisp )';
     
     % ductility demand based on each trial performance point
     MUdemand = max(1, PPxOLD / deltaY);
