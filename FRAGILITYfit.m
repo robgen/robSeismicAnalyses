@@ -312,9 +312,9 @@ if strcmp(plotter, 'plot')
     
 %     % extra plot
 %     scatter(IM, EDP, 36, [1 1 1]*0.7, 'filled', 'MarkerEdgeColor', 'k'); hold on
-%     plot( min(IM):0.01:max(IM) , a*(min(IM):0.01:max(IM)).^b, '-', 'Color', [1 1 1]*0.0, 'LineWidth', 2)
-%     for ds = 1:numel(DStresholds)
-%         plot( [min(IM) max(IM)] , [DStresholds(ds) DStresholds(ds)] , 'LineWidth', 1, 'Color', colours{ds})
+%     plot( min(IM):0.01:max(IM) , powerLaw(1)*(min(IM):0.01:max(IM)).^powerLaw(2), '-', 'Color', [1 1 1]*0.0, 'LineWidth', 2)
+%     for ds = 1:numel(DSthresholds)
+%         plot( [min(IM) max(IM)] , [DSthresholds(ds) DSthresholds(ds)] , 'LineWidth', 1, 'Color', colours{ds})
 %     end
 %     xlabel('IM');
 %     ylabel('EDP');
